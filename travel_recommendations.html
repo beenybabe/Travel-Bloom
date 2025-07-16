@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us - TravelBloom</title>
+    <link rel="stylesheet" href="travel_recommendations.css" />
+    <script
+      src="https://kit.fontawesome.com/587e8abd56.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+ <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-earth-americas"></i>
+        <span>TravelBloom</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about_us">About Us</a></li>
+        <li><a href="#contact_us">Contact Us</a></li>
+      </ul>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter a destination or keyword"
+        />
+        <i class="fas fa-search"></i>
+        <button onclick="searchDestinations()">Search</button>
+        <button onclick="clearSearch()" class="clear-btn">Clear</button>
+      </div>
+    </nav>
+    <div class="results" id="results"></div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1><span>EXPLORE</span><br />DREAM<br />DESTINATION</h1>
+        <p>
+          It encourages exploration of unfamiliar territories, embracing diverse
+          cultures and landscapes, while pursuing the desired destination that
+          captivates the heart and ignites a sense of wonder.
+        </p>
+        <button class="book-btn">BOOK NOW</button>
+      </div>
+    </section>
+    <section class="hero" id="about_us">
+      <div class="hero-content">
+        <h1><span>ABOUT US</span></h1>
+        <p>
+          Welcome to our company, we are a team of passionate individuals
+          dedicated ro providing excellent products/services to our customers.
+          Our mission is to <b>provide the best experience</b> to people
+          traveling to different destinations around the world<br />
+          Our values include, integrity, innovation, customer satisfaction and
+          teamwork. We believe in <b>putting our customers first</b> and
+          <b>working together to achieve our goals </b> <br />
+          Feel free to explore our website to learn more about what we offer!
+        </p>
+        Our Team
+      </div>
+    </section>
+    <section class="hero" id="contact_us">
+      <div class="hero-content">
+        <h1><span>CONTACT US</span></h1>
+        <p>get in touch</p>
+      </div> 
+  <input type="text" placeholder="Name (Optional)"/> <br />
+      <input type="text" placeholder="email(Optional)" /> <br />
+      <textarea
+        id="new_recommendation"
+        cols="500"
+        rows="10"
+        placeholder="Message"
+      ></textarea>
+      <div class="flex_center">
+        <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+      </div>
+    </section>
+  </div> 
+    <script src="travel_recommendations.js"></script>
+  </body>
+</html>
